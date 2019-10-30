@@ -15,11 +15,10 @@ public class MatrixMathDriver
         int[][] C = { {-1,-2,-3},{-2,-3,-4},{4,3,5},{2,0,-1},{5,1,3} };
         
         MatrixMath mathA = new MatrixMath(A);
-		
-		/* TODO
-		 * Use Arrays.toString on the results below
-		 */
 	System.out.println(Arrays.toString(mathA.rowSum()));
+	System.out.println(Arrays.toString(mathA.rowAve()));
+	System.out.println(Arrays.toString(mathA.colSum()));
+	System.out.println(Arrays.toString(mathA.colAve()));
         mathA.rowSum();
         mathA.rowAve();
         mathA.colSum();
@@ -27,6 +26,9 @@ public class MatrixMathDriver
         
         MatrixMath mathB = new MatrixMath(B);
         System.out.println(Arrays.toString(mathB.rowSum()));
+        System.out.println(Arrays.toString(mathB.rowAve()));
+	System.out.println(Arrays.toString(mathB.colSum()));
+	System.out.println(Arrays.toString(mathB.colAve()));
         mathB.rowSum();
         mathB.rowAve();
         mathB.colSum();
